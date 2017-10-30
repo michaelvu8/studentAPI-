@@ -16,7 +16,7 @@ I have successfully implemented the API using Spring Boot. Makes use of H2 in-me
 
 ### GET /Students
 
-Returns an array of all the students in the database and '200 OK'.
+Returns an array of all the students in the database and `200 OK`. If database is empty, returns `204 No Content`.
 For example
 ```
 [
@@ -46,7 +46,7 @@ For example
     
  ### Get /Students/{id}
  
- Returns student with id 'id' and status '200 OK' if student with 'id' exists. Returns '404 Not Found' if student doesn't exist in the database 
+ Returns student with id `id` and status `200 OK` if student with `id` exists. Returns `404 Not Found` if student doesn't exist in the database 
  For example
  
  ```
