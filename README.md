@@ -68,6 +68,7 @@ Returns student with id `id` and status `200 OK` if student with `id` exists. Re
 Adds new students to the database. Returns `201 Created` Status if student was successfully added to the database. Returns `400 Bad Request` if any field is left out or if a student with the same ID already exists in the database. Requires a JSON in the body of the HTTP request of the form
    ```
   {
+        "id": 3,
         "firstName": "Karlie",
         "lastName": "McKenzie",
         "email": "KMcKenzie336@tcd.ie",
