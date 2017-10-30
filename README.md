@@ -18,7 +18,7 @@ I have successfully implemented the API using Spring Boot. Makes use of H2 in-me
 
 Returns an array of all the students in the database and '200 OK'.
 For example
-'''
+```
 [
     {
         "id": 1,
@@ -40,7 +40,7 @@ For example
         "age": 20
     }
 ]
-'''
+```
     
     
     
@@ -49,7 +49,7 @@ For example
  Returns student with id 'id' and status '200 OK' if student with 'id' exists. Returns '404 Not Found' if student doesn't exist in the database 
  For example
  
- '''
+ ```
   {
         "id": 19,
         "firstName": "Jaylen",
@@ -59,4 +59,4 @@ For example
         "address": "583 Bernadette Fords",
         "age": 21
     }
-   '''
+   ```
