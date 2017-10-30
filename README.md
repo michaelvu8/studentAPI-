@@ -12,9 +12,9 @@ I have successfully implemented the API using Spring Boot. Makes use of H2 in-me
  }
  ```
 
-##  GET Requests
+###  GET Requests
 
-### GET /Students/
+#### GET /Students/
 
 Returns an array of all the students in the database and `200 OK`. If database is empty, returns `204 No Content`.
 For example
@@ -44,7 +44,7 @@ For example
     
     
     
- ### Get /Students/{id}
+ #### Get /Students/{id}
  
 Returns student with id `id` and status `200 OK` if student with `id` exists. Returns `404 Not Found` if student doesn't exist in the database 
  For example
@@ -61,9 +61,9 @@ Returns student with id `id` and status `200 OK` if student with `id` exists. Re
     }
    ```
    
-## POST requests
+### POST requests
 
-### POST /Students/
+#### POST /Students/
 
 Adds new students to the database. Returns `201 Created` Status if student was successfully added to the database. Returns `400 Bad Request` if any field is left out or if a student with the same ID already exists in the database. Requires a JSON in the body of the HTTP request of the form
    ```
@@ -78,14 +78,14 @@ Adds new students to the database. Returns `201 Created` Status if student was s
    ```
    
    
-## DELETE requests
-### DELETE /Students/{id}
+### DELETE requests
+#### DELETE /Students/{id}
 
 Delete the student with `id` from the database. Returns `200 OK` status if successfully deleted. If a student with `id` is not in the database, returns `404 Not Found` status.
 
 
-## PUT requests
-### PUT /Students/{id}
+### PUT requests
+#### PUT /Students/{id}
 
 Updates the student with `id` in the database. Returns `200 OK` status if successfully updated. If however a student with `id` does not exist a `404 Not Found` status is returned. Requires a JSON object of student in the body of the HTTP request and if any field is left blank, returns a `400 Bad Content` status. Accepts JSON object in the form of
 ```
