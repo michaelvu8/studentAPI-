@@ -1,6 +1,6 @@
 # Introduction 
 I have successfully implemented the API using Spring Boot. Makes use of H2 in-memory database. The database stores students objects which look like this.
-
+```javascript
  {
         "id": 5,
         "firstName": "Brenden",
@@ -10,3 +10,5 @@ I have successfully implemented the API using Spring Boot. Makes use of H2 in-me
         "address": "987 Maximillia Gardens",
         "age": 20
  }
+ ```
+
