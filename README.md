@@ -87,7 +87,16 @@ Delete the student with `id` from the database. Returns `200 OK` status if succe
 ## PUT requests
 ### PUT /Students/{id}
 
-Updates the student with `id` in the database. Returns `200 OK` status if successfully updated. If however a student with `id` does not exist a `404 Not Found` status is returned. Requires a JSON object of student in the body of the HTTP request and if any field is left blank, returns a `400 Bad Content` status.
-
-
+Updates the student with `id` in the database. Returns `200 OK` status if successfully updated. If however a student with `id` does not exist a `404 Not Found` status is returned. Requires a JSON object of student in the body of the HTTP request and if any field is left blank, returns a `400 Bad Content` status. Accepts JSON object in the form of
+```
+    {
+        "firstName": "Estel",
+        "lastName": "Hoeger",
+        "email": "EHoeger711@tcd.ie",
+        "course": "Nursing",
+        "address": "189 Jonathon Rest",
+        "age": 24
+    },
+```
+Note how ID attribute is not needed in the object
 
