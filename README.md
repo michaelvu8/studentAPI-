@@ -44,7 +44,7 @@ For example
     
     
     
- #### Get /Students/{id}
+ #### GET /Students/{id}
  
 Returns student with id `id` and status `200 OK` if student with `id` exists. Returns `404 Not Found` if student doesn't exist in the database 
  For example
