@@ -79,10 +79,17 @@ Adds new students to the database. Returns `201 Created` Status if student was s
    ```
    
    
+   
+   
 ## DELETE requests
 #### DELETE /Students/{id}
 
 Delete the student with `id` from the database. Returns `200 OK` status if successfully deleted. If a student with `id` is not in the database, returns `404 Not Found` status.
+
+
+
+
+
 
 
 ## PUT requests
